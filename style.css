@@ -1,0 +1,377 @@
+/* =====================================
+   GENERAL STYLING
+===================================== */
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color:red;
+
+    color: #333;
+}
+
+
+/* =====================================
+   NAVIGATION BAR
+===================================== */
+
+nav {
+    background-color:black;
+
+    color: yellow;
+
+    padding: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    font-family: italic;
+}
+
+nav h2 {
+    margin-left: 20px;
+}
+
+
+/* Navigation links */
+
+nav ul {
+    list-style-type: none;
+
+    display: flex;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: yellow;
+
+    text-decoration: none;
+
+    padding: 10px;
+    background-color:none;
+}
+
+
+/* Navigation hover effect */
+
+nav a:hover {
+    background-color:#0522e0;
+
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   HOME PAGE
+===================================== */
+
+.home {
+    min-height: 500px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 40px;
+    background-color: red;
+}
+
+
+/* Profile picture */
+
+.home img {
+    width: 250px;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid black;
+}
+
+
+/* Main heading */
+
+.home h1 {
+    font-size: 40px;
+
+    color: #17365d;
+}
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+.button {
+    display: inline-block;
+
+    background-color:yellow;
+
+    color: black;
+
+    padding: 12px 20px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    margin-top: 15px;
+}
+
+
+/* Button hover */
+
+.button:hover {
+    background-color: #217dbb;
+}
+
+
+/* =====================================
+   GENERAL CONTENT
+===================================== */
+
+.content {
+    width: 80%;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px #cccccc;
+}
+
+.content h1 {
+    color: #17365d;
+
+    text-align: center;
+}
+
+.content h2 {
+    color: #3498db;
+
+    margin-top: 30px;
+}
+
+
+/* =====================================
+   PROJECTS
+===================================== */
+
+.projects {
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #f2f6fa;
+
+    width: 300px;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+/* Project image */
+
+.project img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+
+/* Project hover effect */
+
+.project:hover {
+    transform: scale(1.03);
+
+    box-shadow: 0 4px 12px #bbbbbb;
+}
+
+
+/* =====================================
+   GALLERY
+===================================== */
+
+.gallery {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    justify-content: center;
+}
+
+.gallery img {
+    width: 250px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+/* Gallery hover */
+
+.gallery img:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 4px 10px #999999;
+}
+
+
+/* =====================================
+   CONTACT FORM
+===================================== */
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    width: 100%;
+}
+
+label {
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+input,
+textarea {
+    margin-top: 5px;
+
+    padding: 12px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+textarea {
+    height: 120px;
+}
+
+
+/* Submit button */
+
+button {
+    margin-top: 20px;
+
+    padding: 12px;
+
+    background-color: #3498db;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+/* Button hover */
+
+button:hover {
+    background-color: #217dbb;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    text-align: center;
+
+    background-color: yellow;
+
+    color: black;
+
+    padding: 15px;
+
+    margin-top: 40px;
+    border-radius: 50px;
+}
+
+.h2 {
+    color: cyan;
+    font-family: italic;
+}
+
+/* =====================================
+   MOBILE SCREEN
+===================================== */
+
+@media screen and (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        margin-top: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
